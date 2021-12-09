@@ -28,5 +28,5 @@ yarn create next-app --example with-tailwindcss with-tailwindcss-app
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-# Check UI Design on my Figma :
+## Check UI Design on my Figma :
 https://www.figma.com/file/zWuHboLiw9cJI3J52O2dbB/Desain-PSD?node-id=0%3A1
