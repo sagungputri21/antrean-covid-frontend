@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import Head from 'next/head'
+import UserContext from '../lib/context/UserContext'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +9,9 @@ function MyApp({ Component, pageProps }) {
       <title>Vaksin Kuy</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-  <Component {...pageProps} />
+  <UserContext>
+    <Component {...pageProps} />
+  </UserContext>
   </>
   )
 }

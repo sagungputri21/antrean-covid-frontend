@@ -1,19 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
+import Layout from '../components/Layout/Layout'
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <div className="flex justify-between mt-5">
-        <div>
-          <img src="/Logo.png" alt="logo VaksinKuy" className="flex h-12 ml-6"/>
-        </div>
-        <div>
-          <Link href="/login">
-            <button className="mt-2 mr-6 bg-purple-500 hover:bg-purple-700 text-white font-bold px-7 py-3 rounded-md items-center">Login</button>
-          </Link>
-        </div>
-      </div>
+    <Layout>
       <section>
         <div>
           <img src="/home page.png" alt="ilustrasi medis" className="py-5 h-50 mx-auto flex item-center" />
@@ -33,12 +24,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <footer className="flex items-center justify-center w-full h-24 border-t-2 border-purple-300 mt-10 ">
-        <h2>
-          Created by : {' '}
-        </h2>
-        <h2 className="font-bold ml-1 text-lg font-sans"> Kelompok B3</h2>
-      </footer>
-    </div>
+    </Layout>
   )
 }
