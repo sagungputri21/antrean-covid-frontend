@@ -13,7 +13,6 @@ const PasienNav = () => {
                     <PasienNavLink routes="/Pasien/Pasien" images="" text="Home"/>
                     <PasienNavLink routes="/Pasien/Registrasi" images="/Home.svg" text="Registrasi"/>
                     <PasienNavLink routes="/Pasien/CekStatus" images="/Home.svg" text="Status Vaksin"/>
-                    <PasienNavLink routes="/Pasien/Pasien" images="/Home.svg" text="Home"/>
                 </ul>
                 <div className="mt-48 mb-6 text-purple-600">
                     <PasienNavLink routes="/" images="/Home.svg" text="Logout"/>
