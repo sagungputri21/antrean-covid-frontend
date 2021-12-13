@@ -1,6 +1,5 @@
 import React from 'react'
-import { useRouter } from "next/router"
-import Link from 'next/link'
+import useRouter from "next/router"
 
 const PasienNavLink = ({routes, image, text}) => {
     const router = useRouter()
