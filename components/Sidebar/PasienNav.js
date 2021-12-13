@@ -10,12 +10,12 @@ const PasienNav = () => {
                     <h2 className="text-purple-700 font-bold text-2xl mb-6">MENU</h2>
                 </div>
                 <ul className="font-Roboto text-purple-600 item-center">
-                    <PasienNavLink routes="/Pasien/Pasien" images="" text="Home"/>
-                    <PasienNavLink routes="/Pasien/Registrasi" images="/Home.svg" text="Registrasi"/>
-                    <PasienNavLink routes="/Pasien/CekStatus" images="/Home.svg" text="Status Vaksin"/>
+                    <PasienNavLink routes="/Pasien/Pasien" images="/Home.svg" text="Home"/>
+                    <PasienNavLink routes="/Pasien/Registrasi" images="/registrasi.svg" text="Registrasi"/>
+                    <PasienNavLink routes="/Pasien/CekStatus" images="/status.svg" text="Status Vaksin"/>
                 </ul>
                 <div className="mt-48 mb-6 text-purple-600">
-                    <PasienNavLink routes="/" images="/Home.svg" text="Logout"/>
+                    <PasienNavLink routes="/" images="/Logout.svg" text="Logout"/>
                 </div>
             </div>
     )
