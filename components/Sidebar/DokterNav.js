@@ -10,11 +10,11 @@ const DokterNav = () => {
                 </div>
                 <ul className="font-Roboto text-purple-600 item-center">
                     <PasienNavLink routes="/Dokter/Dokter" images="/Home.svg" text="Home"/>
-                    <PasienNavLink routes="/Dokter/Antrian" images="/Home.svg" text="Antrian"/>
-                    <PasienNavLink routes="/Dokter/Konfirm" images="/Home.svg" text="Konfirmasi"/>
+                    <PasienNavLink routes="/Dokter/Antrian" images="/antrian.svg" text="Antrian"/>
+                    <PasienNavLink routes="/Dokter/Konfirm" images="/konfirmasi.svg" text="Konfirmasi"/>
                 </ul>
                 <div className="mt-48 mb-6 text-purple-600">
-                    <PasienNavLink routes="/" images="/Home.svg" text="Logout"/>
+                    <PasienNavLink routes="/" images="/Logout.svg" text="Logout"/>
                 </div>
             </div>
     )
