@@ -13,9 +13,9 @@ const PasienNav = () => {
                     <PasienNavLink routes="/pasien/registrasi" images="/registrasi.svg" text="Registrasi"/>
                     <PasienNavLink routes="/pasien/CekStatus" images="/status.svg" text="Status Vaksin"/>
                 </ul>
-                <div className="mt-48 mb-6 text-purple-600">
+                <ul className="mt-48 mb-6 text-purple-600">
                     <PasienNavLink routes="/" images="/Logout.svg" text="Logout"/>
-                </div>
+                </ul>
             </div>
     )
 }
