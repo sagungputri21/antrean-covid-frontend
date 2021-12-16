@@ -9,7 +9,7 @@ const PasienVaksin = () => {
                 <div className="flex row border-b-2 mt-3 border-purple-200"></div>
                 <div className="ml-6 mb-8">
                     {/* dummy */}
-                    <Identitas nama="SAGUNG PUTRI NARISWARI" nik="NIK : 2008561062" />
+                    <Identitas nama="SAGUNG" nik="2008561062" />
                 </div>
             </div>
         </div>
