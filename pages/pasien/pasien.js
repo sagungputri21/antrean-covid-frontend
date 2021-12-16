@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import PasienNav from '../../components/Sidebar/PasienNav'
-import Halo from '../../components/haloNama'
+import Halo from '../../components/Custom/haloNama'
 import Note from '../../components/Custom/note'
 
 const pasien = () => {
