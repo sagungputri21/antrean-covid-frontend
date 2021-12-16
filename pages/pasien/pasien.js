@@ -4,7 +4,7 @@ import PasienNav from '../../components/Sidebar/PasienNav'
 import Halo from '../../components/Costum/haloNama'
 import Note from '../../components/Custom/note'
 
-const Pasien = ({nama}) => {
+const pasien = ({nama}) => {
 
     return (
         <body className="bg-purple-100">
@@ -27,5 +27,4 @@ const Pasien = ({nama}) => {
 }
 
 
-export default Pasien
-
+export default pasien
