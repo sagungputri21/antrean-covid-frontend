@@ -14,7 +14,6 @@ const CekStatus = () => {
                     <Title title="Cek Status Vaksinasi"/>
                     <Status/>
                     </section>
-
                 </div>
             </Layout>
         </body>

@@ -4,7 +4,7 @@ import DokterNav from '../../components/Sidebar/DokterNav'
 import PasienVaksin from '../../components/Custom/PasienVaksin'
 import Title from '../../components/Custom/title'
 
-const Konfirmasi = () => {
+const Konfirmasi = ({nama, nik}) => {
     // NamaPasien = 
     return (
         <body className="bg-purple-100">
@@ -14,8 +14,10 @@ const Konfirmasi = () => {
                     <section className="w-9/12 ml-10">
                         <div>
                             <Title title="Konfirmasi Vaksin"/>
-                            <PasienVaksin/>
-                            <button></button>
+                            <PasienVaksin nama={nama} nik={nik}/>
+                            <div className="w-8/12">
+                            <button className="px-5 py-2 bg-purple-500 hover:bg-purple-700 text-white mt-10 rounded-md">Konfirmasi</button>
+                            </div>
                         </div>
                     </section>
                 </div>

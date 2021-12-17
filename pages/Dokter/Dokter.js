@@ -1,17 +1,17 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
-import PasienNav from '../../components/Sidebar/PasienNav'
+import DokterNav from '../../components/Sidebar/DokterNav'
 import Halo from '../../components/Custom/haloNama'
 import Note from '../../components/Custom/note'
 import Jumlah from '../../components/Custom/jumlahAntrian'
 
-const Pasien = ({nama}) => {
+const Dokter = ({nama}) => {
     
     return (
         <body className="bg-purple-100">
             <Layout>
                 <div className="flex row">
-                    <PasienNav />
+                    <DokterNav />
                     <section className="w-9/12">
                         <div className="w-full text-center">
                             <Halo nama={nama} />
@@ -29,4 +29,4 @@ const Pasien = ({nama}) => {
 }
 
 
-export default Pasien
+export default Dokter

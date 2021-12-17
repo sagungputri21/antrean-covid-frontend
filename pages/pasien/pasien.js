@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout/Layout'
 import PasienNav from '../../components/Sidebar/PasienNav'
-import Halo from '../../components/Costum/haloNama'
+import Halo from '../../components/Custom/haloNama'
 import Note from '../../components/Custom/note'
 
 const pasien = ({nama}) => {
@@ -10,7 +10,7 @@ const pasien = ({nama}) => {
         <body className="bg-purple-100">
             <Layout>
                 <div className="flex row">
-                    <PasienNav />
+                    <PasienNav/>
                     <section className="w-9/12">
                         <div className="w-full text-center">
                             <Halo nama={nama} />

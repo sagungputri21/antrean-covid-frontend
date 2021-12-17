@@ -13,7 +13,8 @@ const Antrian = () => {
                     <DokterNav />
                     <section className="w-9/12">
                         <Title title="Daftar Antrian" desc="Berikut adalah daftar nama pasien pada antrian vaksin hari ini." />
-                        <button>Panggil antrian</button>
+
+                        <button className="px-5 py-3 bg-purple-500 hover:bg-purple-700 text-white mt-10 rounded-md">Panggil Antrian</button>
                     </section>
                 </div>
             </Layout>
