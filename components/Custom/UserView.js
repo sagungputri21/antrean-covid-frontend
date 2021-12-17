@@ -4,7 +4,8 @@ const UserView = ({user}) => {
     return (
         <div>
             <p>
-                Gepeh
+                {user}
+                <img src="/profile.svg" alt="user icon" className="flex h-12"/>
             </p>
         </div>
     )

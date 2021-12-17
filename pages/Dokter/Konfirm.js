@@ -9,7 +9,7 @@ const Konfirmasi = ({nama, nik}) => {
     return (
         <body className="bg-purple-100">
             <Layout>
-                <div className="flex flex row">
+                <div className="flex row">
                     <DokterNav/>
                     <section className="w-9/12 ml-10">
                         <div>

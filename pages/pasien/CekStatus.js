@@ -8,7 +8,7 @@ const CekStatus = () => {
     return (
         <body className="bg-purple-100">
             <Layout>
-                <div className="flex flex row">
+                <div className="flex row">
                     <PasienNav />
                     <section className="w-9/12">
                     <Title title="Cek Status Vaksinasi"/>

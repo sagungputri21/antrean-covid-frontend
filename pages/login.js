@@ -1,24 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import Layout from '../components/Layout/Layout'
 import { useForm } from "react-hook-form"
-import SimbolLogin from '../components/simbolLogin'
+import SimbolLogin from '../components/Custom/simbolLogin'
 import Title from '../components/Custom/title'
+import UserView from '../components/Custom/UserView'
+import userHandler from '../lib/apis/userHandler'
+import { UserContext } from '../lib/context/UserContext'
+import ErrorMessage from '../components/Custom/ErrorMessage'
 
 const Login = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const [user, setUser, removeUser] = useContext(UserContext)
 
-    const [isDoctor, setisDoctor] = useState(0)
+    const onSubmit = async (data) => {
+        const res = await userHandler.login(data.username, data.password, isDoctor)
+        if(res){
+            setUser(res)
+        }
+    }
+
+    const [isDoctor, setisDoctor] = useState(false)
 
     return (
         <Layout>
-            <section className='flex w-full items-start mt-5 items-center'>
+            <section className='flex w-full mt-5 items-center'>
                 <div className='flex flex-col w-1/2 justify-center items-center'>
                     <Title title="LOGIN" desc="Pilih peranmu sebagai Pendaftar atau Dokter" />
-                    <div className='flex flex-col w-1/2 mt-10'>
-                        <SimbolLogin doctor={isDoctor} nilaiDoctor={0} setDoctor={setisDoctor} image="/character-2.png" button="Pendaftar" />
-                        <SimbolLogin doctor={isDoctor} nilaiDoctor={1} setDoctor={setisDoctor} image="/doctor.png" button="Dokter" />
+                    <div className='flex flex-col w-1/2 mt-10 ml-28'>
+                        <SimbolLogin doctor={isDoctor} nilaiDoctor={false} setDoctor={setisDoctor} image="/character-2.png" button="Pendaftar" />
+                        <SimbolLogin doctor={isDoctor} nilaiDoctor={true} setDoctor={setisDoctor} image="/doctor.png" button="Dokter" />
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center bg-white shadow-md px-8 pt-8 mb-4 ml-3 w-full max-w-lg">

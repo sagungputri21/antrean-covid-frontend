@@ -1,5 +1,7 @@
 import React from 'react'
 import PasienNavLink from './PasienNavLink'
+import { faHome, faRegistered, faFile } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const PasienNav = () => {
     return(
@@ -9,9 +11,9 @@ const PasienNav = () => {
                     <h2 className="text-purple-700 font-bold text-2xl mb-6">MENU</h2>
                 </div>
                 <ul className="font-Roboto text-purple-600 item-center">
-                    <PasienNavLink routes="/pasien/pasien" images="Home.svg" text="Home"/>
-                    <PasienNavLink routes="/pasien/registrasi" images="registrasi.svg" text="Registrasi"/>
-                    <PasienNavLink routes="/pasien/CekStatus" images="status.svg" text="Status Vaksin"/>
+                    <PasienNavLink routes="/pasien/pasien" icon={<FontAwesomeIcon icon={faHome} size="1x"></FontAwesomeIcon>} text="Home"/>
+                    <PasienNavLink routes="/pasien/registrasi" icon={<FontAwesomeIcon icon={faRegistered} size="1x"></FontAwesomeIcon>} text="Registrasi"/>
+                    <PasienNavLink routes="/pasien/CekStatus" icon={<FontAwesomeIcon icon={faFile} size="1x"></FontAwesomeIcon>} text="Status Vaksin"/>
                 </ul>
                 <ul className="mt-48 mb-6 text-purple-600">
                     <PasienNavLink routes="/" images="/Logout.svg" text="Logout"/>
